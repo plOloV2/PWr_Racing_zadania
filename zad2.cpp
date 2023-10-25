@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-bool zawiera(std::pair<float, float> a, std::pair<float, float> b, std::pair<float, float> c){      //sprawdza czy punkt lezy po prawej czy lewej stronie prostej
+bool zawiera(std::pair<float, float> a, std::pair<float, float> b, std::pair<float, float> c){      //sprawdza czy punkt nalezy do otoczki (iloczyn wektorowy)
     if((a.second*b.first+b.second*c.first+c.second*a.first-c.second*b.first-a.second*c.first-b.second*a.first)<0) return false;
     return true;
 }
