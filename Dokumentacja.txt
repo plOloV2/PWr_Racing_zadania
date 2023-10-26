@@ -1,10 +1,13 @@
 Zadanie 1.
 	Do rozwiązania zadania wykorzystuje implementacje algorytmu PID. Funkcja PID przyjmuje za parametry wartości Kp, Ki, Kd, deltę czasu (delta_t) oraz zadaną wartość (ust_wartosc). Funkcja wykorzystuje też poprzednie wartości błędu i całkowania z poprzednich iteracji. Wynik zwracany jest w
 formacie float. Przed zwróceniem sprawdzane jest czy wynik mieści się w przedziale od -5 do 5.
+
 	Funkcja obiekt emuluje sterowany obiekt wykorzystując wysterowanie z funkcji PID. Do obliczenia wyniku wykorzystuje liczbę Eulera oraz funkcje pow() z biblioteki math.h. Wynik zwracany jest w postaci zmiennej typu float.
 	Wartości zmiennych Kp, Ki i Kd powinny być dostosowane dokładnie do faktycznego zastosowania. Zwiększenie ich spowoduje szybsze osiągniecie przez obiekt zadanej wartości ale może też spowodować przekroczenie przez wynik przedziału -5 do 5. Nie posiadając wartości delty czasu oraz
 zadanej wartości nie potrafię ustalić optymalnych wartości zmiennych Kp, Ki oraz Kd.
-	
+
+
+
 
 Zadanie 2.
 	Do rozwiązania zadania wykorzystałem implementacje algorytmu Grahama. Algorytm ten służy do znajdywania otoczki wypukłej zbioru punktów. Funkcja obwod, w której zaimplementowany jest powyższy algorytm, jako dane przyjmuje wektor par zmiennych typu float, gdzie pierwsza liczba to wartość
@@ -16,5 +19,7 @@ punkt oraz pierwszy z wektora. Kolejno za pomocą pętli for idziemy po kolei po
 	- jeśli tak to usuń ostatni punkt z wyniku;
 	- dodaj do wyniku obecnie sprawdzany punkt z wektora współczynników;
 Po wykonaniu się tej pętli zwracany jest wynik w formacie wektora par zmiennych typu float, gdzie pierwsza liczba to wartość X danego punktu a druga to wartość Y.
+
 	Funkcja zawiera() za argumenty przyjmuje trzy pary zmiennych typu float będące współrzędnymi punktów. Sprawdza ona za pomocą iloczynu wektorowego czy punkt B leży wewnątrz otoczki z punktów A i C;
+
 	Jako wejście danych program przyjmuje plik .txt o nazwie "dane.txt" gdzie pierwsza linijka to ilość danych do wczytania, a kolejne to współrzędne punktów.
