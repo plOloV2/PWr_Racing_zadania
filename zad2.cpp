@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 bool zawiera(std::pair<float, float> a, std::pair<float, float> b, std::pair<float, float> c){      //sprawdza czy punkt nalezy do otoczki (iloczyn wektorowy)
-    if((a.second*b.first+b.second*c.first+c.second*a.first-c.second*b.first-a.second*c.first-b.second*a.first)<0) return false;
+    if(((c.first-a.first)*(b.second-a.second)-(b.first-a.first)*(c.second-a.second))<0) return false;
     return true;
 }
 std::vector<std::pair<float, float> > obwod(std::vector<std::pair<float, float> > dane){        
